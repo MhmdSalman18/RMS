@@ -25,3 +25,13 @@ nav ul {
 nav ul li {
   margin: 0 20px;
 }
+main .user1{
+    width: 400px;
+    height: auto;
+    background-color: aliceblue;
+}
+main .user1 img{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
