@@ -9,8 +9,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-decoration: none;
 }
 nav {
@@ -25,20 +25,40 @@ nav ul {
 nav ul li {
   margin: 0 20px;
 }
-main .user1{
-    width: 400px;
-    height:400px ;
-    background-color: aliceblue;
+main .user-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .user1 img{
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
+main .user1 {
+  border-radius: 20px;
+  border: 1px  solid black;
+  padding: 40px;
+  width: auto;
+  height: auto;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.details{
+main .user1 img {
+  border-radius: 20px;
+  margin-bottom:20px;
+  width: 200px;
+  height: 200px;
+}
+.details {
   display: flex;
 }
-.details ,.name,.shop-name,.shop-id,.date-joined{
-  color:#3F09EB;
-  padding:0 30px;
+.details,
+.name,
+.shop-name,
+.shop-id,
+.date-joined {
+  color: #3f09eb;
+  padding: 0 30px;
+}
+table tr td {
+  padding: 6px 0px;
 }
