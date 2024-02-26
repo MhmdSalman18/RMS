@@ -83,6 +83,9 @@ main .user1 img {
   box-shadow: 0 0 2px black;
   margin: 10px;
 }
+.admin-box img{
+  border-radius: 100px;
+}
 .payment-box{
   width: 481px;
   height: 204px;
