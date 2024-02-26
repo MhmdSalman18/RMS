@@ -94,3 +94,11 @@ main .user1 img {
   margin: 10px;
 
 }
+.payment-box button{
+  width: 400px;
+  height: 60px;
+  background-color: #3f09eb;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
