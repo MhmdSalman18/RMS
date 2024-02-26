@@ -12,6 +12,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-decoration: none;
+
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 p{
   font-size: 20px;
@@ -31,6 +38,9 @@ nav ul {
 nav ul li {
   margin: 0 20px;
 }
+#user-profile{
+  display: flex;
+}
 main .user-main {
   display: flex;
   justify-content: center;
@@ -41,7 +51,7 @@ main .user1 {
   border: 1px  solid black;
  
   width: 468px;
-  height: 500px;
+  height: 560px;
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -69,5 +79,15 @@ main .user1 img {
 .admin-box{
   width: 481px;
   height: 339px;
-  background: #000;
+  border-radius:20px ;
+  box-shadow: 0 0 2px black;
+  margin: 10px;
+}
+.payment-box{
+  width: 481px;
+  height: 204px;
+  border-radius:20px ;
+  box-shadow: 0 0 2px black;
+  margin: 10px;
+
 }
