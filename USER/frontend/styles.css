@@ -92,6 +92,10 @@ main .user1 img {
   border-radius:20px ;
   box-shadow: 0 0 2px black;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 .payment-box button{
@@ -101,4 +105,16 @@ main .user1 img {
   border-radius: 10px;
   border: none;
   color: white;
+  font-size: 20px;
+  margin: 10px;
+  
+}
+.payment-box .pay{
+ 
+}
+.payment-box .history{
+  background: transparent;
+  border: 2px solid  #3f09eb;
+  color: #3f09eb;
+  font-size: 20px;
 }
