@@ -118,3 +118,14 @@ main .user1 img {
   color: #3f09eb;
   font-size: 20px;
 }
+.admin-box{
+  display: flex;
+  flex-direction: column;
+}
+.admin-box .admin-dp{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+
+}
