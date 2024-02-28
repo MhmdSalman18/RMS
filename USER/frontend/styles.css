@@ -30,7 +30,6 @@ nav {
   font-size: 30px;
   height: 150px;
   width: 100%;
-  background-color: #eb0909;
 }
 nav ul {
   display: flex;
@@ -82,9 +81,31 @@ main .user1 img {
   border-radius:20px ;
   box-shadow: 0 0 2px black;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+font-weight: lighter;
+}
+.admin-box button{
+  width: 400px;
+  height: 60px;
+  background-color: #3f09eb;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
 }
 .admin-box img{
   border-radius: 100px;
+  max-width: 100%;
+  height: 62px;
+  margin-right: 20px;
 }
 .payment-box{
   width: 481px;
@@ -121,11 +142,15 @@ main .user1 img {
 .admin-box{
   display: flex;
   flex-direction: column;
+  font-weight: lighter;
+  color: grey;
+  justify-content: space-between;
+  
 }
 .admin-box .admin-dp{
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin: 10px;
+  justify-content: left;
 
 }
