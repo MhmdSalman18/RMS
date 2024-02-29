@@ -47,6 +47,7 @@ main .user-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideInL 2s ease;
 }
 main .user1 {
   border-radius: 20px;
@@ -159,3 +160,12 @@ font-weight: lighter;
 
 }
 /* animations */
+@keyframes slideInL{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+  }
+}
