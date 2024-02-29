@@ -11,7 +11,7 @@ h1{
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("images/bg.jpg");
+  background-image: url("/USER/frontend/images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-decoration: none;
@@ -73,6 +73,8 @@ main .user1 {
 }
 main .user1:hover {
   transform: scale(1.1);
+  box-shadow: 0 0  10px #525155;
+
 }
 main .user1 img {
   border-radius: 20px;
@@ -92,7 +94,8 @@ main .user1 img {
   padding: 15px 0 ;
 }
 
-.admin-box{
+main .admin-box{
+  transition: transform 1s ease-out;
   width: 481px;
   animation: slideInR 1s ease;
   height: 339px;
@@ -106,6 +109,11 @@ main .user1 img {
   align-items: left;
   padding: 20px;
 font-weight: lighter;
+}
+main .admin-box:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0  10px #525155;
+
 }
 .admin-box button{
   width: 400px;
@@ -127,9 +135,9 @@ font-weight: lighter;
   height: 62px;
   margin-right: 20px;
 }
-.payment-box{
+main .payment-box{
   animation: slideInR 1s ease;
-
+  transition: transform 1s ease-out;
   width: 481px;
   height: 204px;
   border-radius:20px ;
@@ -139,6 +147,11 @@ font-weight: lighter;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+}
+main .payment-box:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0  10px #525155;
 
 }
 .payment-box button{
