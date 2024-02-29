@@ -17,6 +17,14 @@ body {
   text-decoration: none;
 
 }
+button{
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0  10px #3f09eb;
+}
 main{
   display: flex;
   justify-content: center;
@@ -27,6 +35,7 @@ p{
   font-size: 20px;
 }
 nav {
+  animation: slideInT 1s ease-out;
   display: flex;
   justify-content: space-between;
   padding: 4vw;
@@ -53,7 +62,7 @@ main .user1 {
   border-radius: 20px;
   border: 1px  solid #3f09eb;
   
- 
+ transition: transform 1s ease;
   width: 468px;
   height: 600px;
   background-color: rgba(255, 255, 255, 0.542);
@@ -61,6 +70,9 @@ main .user1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main .user1:hover {
+  transform: scale(1.1);
 }
 main .user1 img {
   border-radius: 20px;
@@ -82,10 +94,13 @@ main .user1 img {
 
 .admin-box{
   width: 481px;
+  animation: slideInR 1s ease;
   height: 339px;
   border-radius:20px ;
   border: 1px  solid #3f09eb;
   margin: 40px;
+  background-color: rgba(255, 255, 255, 0.542);
+
   display: flex;
   justify-content: center;
   align-items: left;
@@ -113,6 +128,8 @@ font-weight: lighter;
   margin-right: 20px;
 }
 .payment-box{
+  animation: slideInR 1s ease;
+
   width: 481px;
   height: 204px;
   border-radius:20px ;
@@ -167,5 +184,26 @@ font-weight: lighter;
   }
   to{
     transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInR{
+  from{
+    transform:translateX(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInT{
+  from{
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translatey(0);
+    opacity: 1;
   }
 }
