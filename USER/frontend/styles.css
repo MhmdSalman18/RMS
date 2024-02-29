@@ -47,11 +47,12 @@ main .user-main {
 }
 main .user1 {
   border-radius: 20px;
-  border: 1px  solid black;
+  border: 1px  solid #3f09eb;
+  
  
   width: 468px;
   height: 560px;
-  background-color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.542);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +80,7 @@ main .user1 img {
   width: 481px;
   height: 339px;
   border-radius:20px ;
-  box-shadow: 0 0 2px black;
+  border: 1px  solid #3f09eb;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -111,7 +112,7 @@ font-weight: lighter;
   width: 481px;
   height: 204px;
   border-radius:20px ;
-  box-shadow: 0 0 2px black;
+  border: 1px  solid #3f09eb;
   margin: 10px;
   display: flex;
   justify-content: center;
