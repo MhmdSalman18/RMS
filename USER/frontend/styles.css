@@ -7,7 +7,7 @@
   list-style: none;
 }
 h1{
-  font-weight: 600;
+  font-weight: 400;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -54,7 +54,7 @@ main .user1 {
   
  
   width: 468px;
-  height: 560px;
+  height: 600px;
   background-color: rgba(255, 255, 255, 0.542);
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ main .user1 img {
   height: 339px;
   border-radius:20px ;
   border: 1px  solid #3f09eb;
-  margin: 10px;
+  margin: 40px;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -116,7 +116,7 @@ font-weight: lighter;
   height: 204px;
   border-radius:20px ;
   border: 1px  solid #3f09eb;
-  margin: 10px;
+  margin: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,3 +158,4 @@ font-weight: lighter;
   justify-content: left;
 
 }
+/* animations */
