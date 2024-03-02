@@ -47,6 +47,14 @@ nav ul {
 nav ul li {
   margin: 0 20px;
 }
+ button{
+  width: 200px;
+  height: auto;
+  background-color: #3f09eb;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 /* animations */
 
