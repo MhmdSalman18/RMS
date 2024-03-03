@@ -55,7 +55,20 @@ nav ul li {
   padding: 10px;
   border-radius: 10px;
 }
-
+td,th{
+  font-size: 2rem;
+  padding: 30px;
+  text-align: left;
+  
+}
+th{
+  border-bottom: 1px solid black;
+}
+table{
+  width: 1000px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
 /* animations */
 
 @keyframes slideInT{
