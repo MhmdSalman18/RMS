@@ -53,6 +53,10 @@ nav ul {
 nav ul li {
   margin: 0 20px;
 }
+.fa-bell{
+  color: #3f09eb;
+
+}
 #user-profile{
   display: flex;
 }
@@ -270,5 +274,8 @@ main .payment-box:hover{
 
   p{
     font-size: 2vw;
+  }
+  .Notification,.Maintenance{
+    display: none;
   }
 }
