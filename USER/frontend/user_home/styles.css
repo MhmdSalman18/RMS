@@ -60,6 +60,8 @@ main .user-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: auto;
   animation: slideInL 2s ease;
 }
 main .user1 {
@@ -67,8 +69,8 @@ main .user1 {
   border: 1px  solid #3f09eb;
   
  transition: transform 1s ease;
-  width: 468px;
-  height: 600px;
+  width: 30vw;
+  height: 80vh;
   background-color: rgba(255, 255, 255, 0.542);
   display: flex;
   flex-direction: column;
@@ -222,5 +224,51 @@ main .payment-box:hover{
   to{
     transform: translatey(0);
     opacity: 1;
+  }
+}
+
+
+/* responsiveness */
+@media (width<600px){
+  #user-profile{
+    display: flex;
+    flex-direction: column;
+  }
+  main .user1 {
+    width: 60vw;
+    height: 60vh;
+  }
+  main .admin-box{
+    width: 60vw;
+    height: 40vh;
+   
+  }
+  main .admin-box button{
+    width: 50vw;
+    height: 6vh;
+    font-size: 2vw;
+
+  }
+ h1{
+  font-size: 2vw;
+
+ }
+  main .payment-box{
+    width: 60vw;
+    height: 20vh;
+  }
+  main .payment-box button{
+    width: 50vw;
+    height: 6vh;
+    font-size: 2vw;
+  }
+  main .payment-box a{
+    width: 50vw;
+    height: 6vh;
+    font-size: 2vw;
+  }
+
+  p{
+    font-size: 2vw;
   }
 }
