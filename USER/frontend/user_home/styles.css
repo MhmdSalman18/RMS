@@ -33,6 +33,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  
   padding: 20px;
 }
 p{
@@ -59,6 +60,7 @@ nav ul li {
 }
 #user-profile{
   display: flex;
+  flex-wrap: wrap;
 }
 main .user-main {
   display: flex;
