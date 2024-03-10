@@ -128,8 +128,8 @@ main .admin-box:hover{
 
 }
 .admin-box button{
-  width: 400px;
-  height: 60px;
+  width: 28vw;
+  height: 6vh;
   background-color: #3f09eb;
   border-radius: 10px;
   border: none;
@@ -150,8 +150,9 @@ main .admin-box:hover{
 main .payment-box{
   animation: slideInR 1s ease;
   transition: transform 1s ease-out;
-  width: 481px;
-  height: 204px;
+  width:auto ;
+  height: auto;
+  padding: 10px;
   border-radius:20px ;
   border: 1px  solid #3f09eb;
   margin: 40px;
@@ -167,8 +168,8 @@ main .payment-box:hover{
 
 }
 .payment-box button{
-  width: 400px;
-  height: 60px;
+  width: 28vw;
+  height: 6vh;
   background-color: #3f09eb;
   border-radius: 10px;
   border: none;
