@@ -49,6 +49,27 @@ nav {
     border-radius: 10px;
     border: 1px solid  #3f09eb;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 
 
   }
+  .title{
+    width:50vw;
+    height: 4vh;
+    border-radius:4px;
+    padding: 0 4px;
+    
+  }
+  .description{
+    width:50vw;
+    height: 30vh;
+    border-radius:4px;
+
+  }
+  .upload-box{
+    border: dotted;
+    width:50vw;
+    height: 30vh;
+  }
+  
