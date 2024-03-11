@@ -35,3 +35,20 @@ nav {
   nav ul li {
     margin: 0 20px;
   }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .box{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid  #3f09eb;
+    padding: 20px;
+
+
+  }
