@@ -56,13 +56,26 @@
             
             <label for="description">Description *</label><br>
             <textarea id="description" class="description"  name="description" rows="4" ></textarea><br>
-            <h1>Upload photos about any maintainance</h1>
+            <h1>Upload files about any maintainance</h1>
+
+             
             <div class="upload-box">
-                
-            </div>
+              <form id="uploadForm" enctype="multipart/form-data">
+                  <input type="file" id="fileInput" multiple class="fileInput"/><br/>
+                  <input type="submit" value="Upload" class="submit" >
+              </form>
+          </div>
+          
+          <div class="file-container">
+              <div class="file1"></div>
+              <div class="file2"></div>
+              <div class="file3"></div>
+          </div>
+          
 
         </div>
       </main>
     
 </body>
 </html>
+<script src="script.js"></script>
