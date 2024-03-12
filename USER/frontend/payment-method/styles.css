@@ -5,8 +5,13 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
-
+h1{
+  font-size: 1.2vw;
+  font-weight:normal;
+  padding: 2vh;
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("/USER/frontend/images/bg.jpg");
@@ -15,7 +20,11 @@ body {
   text-decoration: none;
 
 }
-
+button{
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  font-size: 1.2vw;
+}
 button:hover{
   transform: scale(1.1);
   box-shadow: 0 0  10px #3f09eb;
@@ -24,14 +33,11 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  
   padding: 20px;
 }
-.fa-bell{
-  width: 20px;
-  height: 20px;
-}
 p{
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 nav {
   animation: slideInT 1s ease-out;
@@ -48,36 +54,32 @@ nav ul {
 nav ul li {
   margin: 0 20px;
 }
- button{
-  width: 200px;
-  height: auto;
-  background-color: #3f09eb;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-td,th{
-  font-size: 2.2vh;
-  padding: 20px;
-  text-align: center;
-  
-}
-th{
-  border-bottom: 1px solid black;
-  text-align: center;
+.fa-bell{
+  color: #3f09eb;
 
 }
-table{
-  margin:10px;
-  width: 60vw;
-  border-radius: 10px;
-  border: 1px solid black;
-}
+
 /* animations */
-
+@keyframes slideInL{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInR{
+  from{
+    transform:translateX(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 @keyframes slideInT{
   from{
     transform: translatey(-100px);
@@ -86,5 +88,17 @@ table{
   to{
     transform: translatey(0);
     opacity: 1;
+  }
+}
+
+
+/* responsiveness */
+@media (width<600px){
+  
+  p{
+    font-size: 2vw;
+  }
+  .Notification,.Maintenance{
+    display: none;
   }
 }
