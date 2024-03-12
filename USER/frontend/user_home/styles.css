@@ -39,6 +39,9 @@ main{
 p{
   font-size: 1.2vw;
 }
+.pay1{
+  color: white;
+}
 nav {
   animation: slideInT 1s ease-out;
   display: flex;
@@ -140,6 +143,10 @@ main .admin-box:hover{
   justify-content: space-around;
   text-align: center;
   align-items: center;
+}
+.dp-img{
+  border-radius: 50px;
+  width: 2.3vw;
 }
 .admin-box img{
   border-radius: 100px;

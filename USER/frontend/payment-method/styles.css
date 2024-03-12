@@ -7,6 +7,11 @@
   list-style: none;
   text-decoration: none;
 }
+label{
+  font-size: 1.2vw;
+  font-weight:normal;
+  padding: 2vh;
+}
 h1{
   font-size: 1.2vw;
   font-weight:normal;
@@ -21,19 +26,31 @@ body {
 
 }
 button{
+  width: 38vw;
+  height: 6vh;
+  background-color: #3f09eb;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
   transition: transform 0.3s ease;
   cursor: pointer;
   font-size: 1.2vw;
 }
 button:hover{
-  transform: scale(1.1);
+  transform: scale(1.02);
   box-shadow: 0 0  10px #3f09eb;
 }
 main{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  flex-direction: column;
   padding: 20px;
 }
 p{
@@ -58,6 +75,36 @@ nav ul li {
   color: #3f09eb;
 
 }
+h1{
+  
+}
+.box .date1{
+  display: flex;
+  float: right;
+ 
+ 
+
+}
+input[type="text"]{
+  width: 20vw;
+  height: 4vh;
+  border: 1px solid #3f09eb;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.box{
+  text-align: left;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 10px ;
+  background-color: transparent;
+  border:1px solid #3f09eb ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
 
 /* animations */
 @keyframes slideInL{
