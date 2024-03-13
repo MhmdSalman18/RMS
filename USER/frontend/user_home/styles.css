@@ -7,6 +7,9 @@
   list-style: none;
   text-decoration: none;
 }
+li{
+  cursor: pointer;
+}
 h1{
   font-size: 1.2vw;
   font-weight:normal;
@@ -19,6 +22,14 @@ body {
   background-size: cover;
   text-decoration: none;
 
+}
+ul a{
+  text-align: center;
+  display: flex;
+  margin-left: 10px;
+}
+span{
+  margin-left: 10px;
 }
 button{
   transition: transform 0.3s ease;
@@ -130,6 +141,7 @@ main .admin-box:hover{
   box-shadow: 0 0  10px #525155;
 
 }
+
 .admin-box button{
   width: 28vw;
   height: 6vh;

@@ -56,6 +56,9 @@ main{
 p{
   font-size: 1.2vw;
 }
+.home{
+  
+}
 nav {
   animation: slideInT 1s ease-out;
   display: flex;
@@ -92,6 +95,10 @@ input[type="text"]{
   border-radius: 4px;
   padding: 1px 5px;
 }
+input[type="radio"]{
+  margin: 10px 26px;
+}
+
 .box{
   text-align: left;
   width: 40vw;

@@ -14,9 +14,13 @@
   </head>
   <body>
     <nav>
-      <div class="logo"><a href="/USER/frontend/user_home/index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></div>
+      <div class="logo">
+        <a href="/USER/frontend/user_home/index.html"
+          ><i class="fa fa-arrow-left" aria-hidden="true"></i
+        ></a>
+      </div>
       <ul>
-        <li>
+        <li class="maintenance-nav">
           <svg
             width="30"
             height="30"
@@ -41,10 +45,11 @@
               stroke-linejoin="round"
             />
           </svg>
+          <a href="/USER/frontend/maintenance/index.html"
+            ><li class="Maintenance">Maintenance</li></a
+          >
         </li>
-        <a href="/USER/frontend/maintenance/index.html"
-          ><li class="Maintenance">Maintenance</li></a
-        >
+
         <li><i class="fa-regular fa-bell"></i></li>
         <li class="Notification">Notification</li>
         <li>
@@ -54,14 +59,16 @@
             src="/USER/frontend/images/user-dp.jpg"
             alt=""
           />
-        </li>      </ul>
+        </li>
+      </ul>
     </nav>
     <main>
+      <div class="home">
       <h1>Select payment method</h1>
       <div class="box">
         <div class="date1"><p class="date">12-05-2022</p></div>
         <div class="input1">
-          <label for="amount-to-be-paid">Amount to be paid</label>
+          <label for="amount-to-be-paid">Amount to be paid : </label>
           <input
             type="text"
             name=""
@@ -71,7 +78,7 @@
           />
         </div>
         <div class="input2">
-          <label for="paying-amount">Amount to be paid</label>
+          <label for="paying-amount">Amount to be paid : </label>
           <input
             type="text"
             name=""
@@ -81,12 +88,26 @@
           />
         </div>
         <div class="payment-type">
-          <label for="payment-type">Mode of payment</label>
-          <input type="radio" class="type-online" />
-          <input type="radio" class="type-offline" />
+          <label for="payment-type">Mode of payment : </label>
+          <label for="type-online">Online</label>
+          <input
+            type="radio"
+            id="type-online"
+            name="payment"
+            class="type-online"
+          />
+          <label for="type-offline">Offline</label>
+          <input
+            type="radio"
+            id="type-offline"
+            name="payment"
+            class="type-offline"
+          />
         </div>
-        <button>Send request to admin</button>
+        <button id="submitButton">Send request to admin</button>
       </div>
+    </div>
     </main>
   </body>
 </html>
+<script src="script.js"></script>
