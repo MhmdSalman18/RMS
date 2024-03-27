@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9bc347aac1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <div class="nav-main">
+        <ul class="nav-contents">
+          <li><h3>Name of the perrson</h3></li>
+          <li><img class="dp" src="/ADMIN/frontend/images/bg.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="sidebar">
+      <div class="sidebar-header"></div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#"><i class="fas fa-users"></i> Users</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-wrench"></i> Maintenance</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-moon"></i> Dark Mode</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <div class="box">
+        <div class="dp">
+          <img src="" alt="" />
+          <div class="user name">SUGUMARAN PARAKULLIL</div>
+          <div class="date">Date</div>
+        </div>
+        <table>
+          <tr>
+            <td><label for="amount">Amount to be paid:</label></td>
+            <td>
+              <input
+                type="text"
+                name="amount_to_be_paid"
+                id="amount_to_be_paid"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="amount">Paying Amount:</label></td>
+            <td>
+              <input type="text" name="paying_amount" id="paying_amount" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mode of payment</label> </td>
+            <td>
+              <p>Online</p>
+
+            </td>
+          </tr>
+        </table>
+        <button id="submit">Submit Payment</button>
+
+      </div>
+    </main>
+  </body>
+</html>
+<script src="script.js"></script>

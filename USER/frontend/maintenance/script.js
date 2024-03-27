@@ -1,59 +1,85 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const uploadForm = document.getElementById("uploadForm");
-    const fileInput = document.getElementById("fileInput");
+    const uploadButton = document.getElementById("uploadButton");
     const fileContainer = document.querySelector(".file-container");
 
-    uploadForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-        const files = fileInput.files;
+    uploadButton.addEventListener("click", function() {
+        const fileInput = document.createElement("input");
+        fileInput.type = "file";
+        fileInput.multiple = true;
+        fileInput.style.display = "none";
 
-        // Loop through each file
-        for (let i = 0; i < files.length; i++) {
-            const file = files[i];
-            const reader = new FileReader();
+        fileInput.addEventListener("change", function() {
+            const files = fileInput.files;
 
-            // Create elements for displaying file
-            const fileDiv = document.createElement("div");
-            const fileName = document.createElement("p");
-            const viewButton = document.createElement("button");
-            const deleteButton = document.createElement("button");
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const reader = new FileReader();
 
-            fileName.textContent = file.name;
-            viewButton.textContent = "View";
-            deleteButton.textContent = "Delete";
+                const fileDiv = document.createElement("div");
+                const fileName = document.createElement("p");
+                const viewButton = document.createElement("button");
+                const deleteButton = document.createElement("button");
 
-            // Add classes to elements
-            fileDiv.classList.add("file");
-            fileName.classList.add("file-name");
-            viewButton.classList.add("button", "view-button");
-            deleteButton.classList.add("button", "delete-button");
+                fileName.textContent = file.name;
+                viewButton.textContent = "View";
+                deleteButton.textContent = "Delete";
 
-            // Add event listeners for buttons
-            viewButton.addEventListener("click", function() {
-                // Implement view functionality here
-                alert("Viewing: " + file.name);
-            });
+                fileDiv.classList.add("file");
+                fileName.classList.add("file-name");
+                viewButton.classList.add("button", "view-button");
+                deleteButton.classList.add("button", "delete-button");
 
-            deleteButton.addEventListener("click", function() {
-                // Implement delete functionality here
-                fileDiv.remove();
-            });
+                viewButton.addEventListener("click", function() {
+                    const blob = new Blob([file], { type: file.type });
+                    const url = URL.createObjectURL(blob);
+                    window.open(url, '_blank');
+                });
 
-            // Append elements to fileDiv
-            fileDiv.appendChild(fileName);
-            fileDiv.appendChild(viewButton);
-            fileDiv.appendChild(deleteButton);
+                deleteButton.addEventListener("click", function() {
+                    fileDiv.remove();
+                });
 
-            // Add fileDiv to fileContainer
-            fileContainer.appendChild(fileDiv);
+                fileDiv.appendChild(fileName);
+                fileDiv.appendChild(viewButton);
+                fileDiv.appendChild(deleteButton);
 
-            // Read the file as text and display its contents
-            reader.onload = function(event) {
-                const fileContent = event.target.result;
-                // Display file content if needed
-            };
+                fileContainer.appendChild(fileDiv);
 
-            reader.readAsText(file);
-        }
+                reader.onload = function(event) {
+                    const fileContent = event.target.result;
+                };
+
+                reader.readAsText(file);
+            }
+        });
+
+        fileInput.click();
     });
+});
+
+document.getElementById("saveButton").addEventListener("click", function() {
+    alert("Form Saved!");
+});
+
+document.getElementById("resetButton").addEventListener("click", function() {
+    document.getElementById("title").value = "";
+    document.getElementById("description").value = "";
+    document.querySelector(".file-container").innerHTML = "";
+    alert("Form Reset!");
+});
+// JavaScript for Save and Reset Buttons
+
+// Save Button
+document.getElementById("saveButton").addEventListener("click", function() {
+    // You can add your save functionality here
+    alert("Form Saved!");
+});
+
+// Reset Button
+document.getElementById("resetButton").addEventListener("click", function() {
+    // You can add your reset functionality here
+    document.getElementById("title").value = "";
+    document.getElementById("description").value = "";
+    document.querySelector(".file-container").innerHTML = ""; // Clears uploaded files
+    alert("Form Reset!");
 });

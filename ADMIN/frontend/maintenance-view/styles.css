@@ -4,16 +4,23 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("bg.jpg");
+  /* background-image: url("bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   
 }
-img {
+.dp{
+ display: flex;
+}
+.dp img {
   border-radius: 100%;
   width: 5vw;
   height: 10vh;
   margin-right: 60px;
+}
+.images img{
+  width: 10vw;
+  height: auto;
 }
 
 
