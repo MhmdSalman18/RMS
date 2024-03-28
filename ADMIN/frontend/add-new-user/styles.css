@@ -1,5 +1,3 @@
-/* Imports */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -72,7 +70,6 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* border: 1px solid black; */
   font-size: 1.6vmax;
   padding: 10vh 1vw;
 }
@@ -113,18 +110,15 @@ body.dark-mode {
   cursor: pointer;
 }
 
-/*8888888888888888888888888888888a main 88888888888888888888888888*/
+/*8888888888888888888888888888888amain88888888888888888888888888*/
 main {
   padding: 10vh 4vw;
   margin-left: 26vw;
 }
-
 .dp {
   display: flex;
   padding-top: 100px;
 }
-
-
 .dp button {
   color: #fff;
   border: none;
@@ -133,64 +127,37 @@ main {
   padding: 10px 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 2vmin;
 }
-.dp .delete {
-  background-color: red;
-}
-
-.dp .upload {
-  background-color: #3f09eb;
-  border-radius: 10px;
-  color: white;
-  margin-top: 10px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1px 30px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.buttons {
-  float: right;
-}
-.buttons i {
-  margin: 0 10px;
-}
-
 .details {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
+
+.buttons {
+  float: right;
+}
+
+.buttons i {
+  margin: 0 10px;
+}
+
+.user-details {
+  margin: 6vmin 0;
+}
+
+
+
+
+
 span {
   font-size: 3vmin;
   display: inline;
   flex-direction: row;
   text-align: left;
 }
-.user-details {
-  margin: 6vmin 0;
-}
-
-.payment-table table {
-  padding: 8px;
-  width: 80%;
-  border-radius: 10px;
-  border: 1px solid black;
-  height: 30vh;
-}
-
-.payment-table th,
-td {
-  padding: 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-
 tr {
   font-size: 3vmin;
   margin: 10px 0;
@@ -214,23 +181,13 @@ tr {
   margin: 6vh;
   cursor: pointer;
 }
+.form-buttons .reset-form {
+  background-color: transparent;
+  border: 1px solid #3f09eb;
+  color: #3f09eb;
+}
 
-.add-new {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 22%;
-}
-.add-new-payment {
-  background-color: #50b100;
-  height: min-content;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 20px;
-  color: #fff;
-  width: fit-content;
-}
+
 .add-new-payment i {
   margin-left: 10px;
 }
@@ -308,8 +265,21 @@ tr {
   border-radius: 5px;
 }
 
-.form-buttons .reset-form{
-  background-color: transparent;
-  border:1px solid #3f09eb;
-  color:#3f09eb;
+.dp .delete {
+  background-color: red;
 }
+.dp .upload {
+  background-color: #3f09eb;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 30px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* display and delete dp ====================================*/
