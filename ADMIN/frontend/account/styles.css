@@ -9,10 +9,7 @@ body {
   background-size: cover;
   
 }
-.dp{
-  width: 4vw;
-  height: 8vh;
-}
+
 img {
   border-radius: 100%;
   width: 5vw;
@@ -107,38 +104,44 @@ main {
   margin-left: 26vw;
   
 }
-.add-new-user {
-  float: right;
-  color: #3f09eb;
-  padding: 10px;
-  
-  border-radius: 6px;
-  border: 1px solid #3f09eb;
-  background-color: transparent;
-  font-size: 1.4vmax;
-  margin-right: 60px
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px; /* Adjust spacing between rows */
 }
-.fa-plus {
-  padding-left: 20px;
-}
-
-.content {
+.column {
   display: flex;
   flex-direction: column;
+  margin-right: 20px; /* Adjust spacing between label and h3 */
 }
-.content .user1 i {
-  font-size: 10vh;
-  float: right;
+.dp{
+ display: flex;
+ justify-content: left;
+ align-items: center;
+ margin:20px 30px;
 }
-.user1 {
-  border: 1px solid black;
+.box{
+  border: 1px solid #3f09eb;
   border-radius: 10px;
-  width: 60vw;
-  margin: 10vh 0;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
 }
- .user-info {
+label{
+  margin: 10px;
+}
+.field{
   display: flex;
+  align-items: center;
+  margin: 30px;
+}
+.row{
+  display: flex;
+  align-items: center;
+ 
+}
+button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3f09eb;
+  color: #fff;
+  cursor: pointer;
 }
