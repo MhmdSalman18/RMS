@@ -9,9 +9,11 @@ body {
   background-size: cover;
   
 }
-.dp{
-  width: 4vw;
-  height: 8vh;
+h2{
+  background-color: #676666;
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 6px;
 }
 img {
   border-radius: 100%;
@@ -19,7 +21,9 @@ img {
   height: 10vh;
   margin-right: 60px;
 }
-
+h1{
+  margin: 100px 0;
+}
 
 nav {
   background-color: #fff;
@@ -107,14 +111,13 @@ main {
   margin-left: 26vw;
   
 }
-.main-body{
-  
-}
+
 .dp{
   display: flex;
-  padding: 10px;
-  
+ padding-top: 100px;
+ 
 }
+
   
 .details{
   display: flex;
@@ -126,62 +129,86 @@ main {
   color: #fff;
   border: none;
   margin: 10px;
+  border-radius: 10px;
+  padding:10px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 2vmin;
 }
 .buttons{
   float: right;
+  
 }
 
-
-
-
-.file-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 10px;
-  background-color: red;
+.buttons button{
+  background-color: #3f09eb;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-right: 20px;
+  font-size: 20px;
 }
-
-.file {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  width:50vw;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-
-.file p {
-  margin: 0;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.file button {
-  padding: 1vh 3vw;
-  border-radius: 4px;
+.buttons i{
   margin: 0 10px;
-  margin-top: 5px;
-  cursor: pointer;
+}
+.buttons .add-new-payment{
+  background-color: #50b100;
+}
+.user-details{
+  margin: 6vmin 0;
+}
+.file-container{
+  margin: 20px 0;
+}
+.file-container .file1{
+  padding:4px 10px;
+  border: 1px solid #3f09eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  width: 50vw;
+  margin: 20px 0;
+}
+.file1 button{
+   background-color: #3f09eb;
+   color: #fff;
+   padding: 20px 60px;
+   border-radius: 6px;
+   font-size: 20px;
+  
 }
 
-.view-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-}
 
-.delete-button {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-}
-table {
-  margin-left: 10%;
+.payment-table table {
+  padding: 8px;
   width: 80%;
   border-radius: 10px;
   border: 1px solid black;
+}
+
+.payment-table th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.payment-table span{
+  padding-bottom: 100px;
+}
+
+span{
+  font-size: 3vmin;
+  display:inline;
+  flex-direction: row;
+  text-align: left;
+}
+tr{
+  font-size: 3vmin;
+  margin: 10px 0;
+}
+.user-details td{
+  height: 9vh;
 }

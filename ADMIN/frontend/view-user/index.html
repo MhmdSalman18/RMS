@@ -17,7 +17,7 @@
         <ul class="nav-contents">
          
           <li><h3>Name of the perrson</h3></li>
-          <li><img class="dp" src="admin.jpg" alt=""></li>
+          <li><img class="nav-dp" src="admin.jpg" alt=""></li>
 
          
         </ul>
@@ -48,89 +48,119 @@
       <div class="content">
         <!-- Your main content goes here -->
         <div class="buttons">
-          <button class="add-new-user">
-            Edit User<i class="fa-solid fa-plus"></i>
+          <button class="add-new-payment">
+            Add new payment<i class="fa-regular fa-credit-card"></i>
           </button>
           <button class="add-new-user">
-            Add new payment<i class="fa-solid fa-plus"></i>
+            Edit User<i class="fa-regular fa-pen-to-square"></i>
           </button>
+         
         </div>
        
 
         <!-- ======================================= users-list =============================-->
-          <div class="main-body">
+          <div class="main-body" >
             <div class="dp"> <img src="/ADMIN/frontend/list-of-users/admin.jpg" alt="">
               <button id="upload" class="upload">Upload</button>
-              <button id="delete" class="delete">Delete</button>
+              <button style="background-color: red;" id="delete" class="delete">Delete</button>
             </div>
             <div class="details">
-              <p>User Details:</p>
+              
               <div class="user-info">
-                  <span class="field field-name">Name:</span>
-                  <span class=" name">Sugumaran Parakulil</span><br />
-          
-                  <span class="field field-name">Email:</span>
-                  <span class=" email">Sugumaran@gmail.com</span><br />
-          
-                  <span class="field field-name">Phone No:</span>
-                  <span class=" phone">123456789</span><br />
-          
-                  <span class="field field-name">Password:</span>
-                  <span class=" password">987654321</span><br />
-          
-                  <span class="field field-name">Shop id:</span>
-                  <span class=" shop-id">78943</span><br />
-          
-                  <span class="field field-name">Start date:</span>
-                  <span class=" start-date">10-10-2020</span><br />
-          
-                  <span class="field field-name">Security:</span>
-                  <span class=" security">4000</span><br />
-          
-                  <span class="field field-name">State:</span>
-                  <span class=" state">Kerala</span><br />
-          
-                  <span class="field field-name">District:</span>
-                  <span class=" district">Kottayam</span><br />
-          
-                  <span class="field field-name">Town:</span>
-                  <span class=" town">Pala</span><br />
-          
-                  <span class="field field-name">Pin code:</span>
-                  <span class=" pin-code">686575</span><br />
-
-                  <span class="field field-name">Documents:</span>
-                  <div class="file-container">
-                    <div class="file1"></div>
-                    <div class="file2"></div>
-                    <div class="file3"></div>
-                </div>
-                <table>
+                <table id="userDetailsTable" class="user-details">
+                  
                   <tr>
-                    <th>Shop ID</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th>Mode of Payment</th>
+                    <td class="field-name">Name : </td>
+                    <td class="user-name">Sugumaran Parakulil</td>
                   </tr>
                   <tr>
-                    <td>12345</td>
-                    <td>$100</td>
-                    <td>2024-03-11</td>
-                    <td>Offline</td>
+                    <td class="field-name">Email : </td>
+                    <td class="user-email">Sugumaran@gmail.com</td>
                   </tr>
                   <tr>
-                    <td>67890</td>
-                    <td>$50</td>
-                    <td>2024-03-12</td>
-                    <td>Online</td>
+                    <td class="field-name">Phone No : </td>
+                    <td class="user-phone">123456789</td>
                   </tr>
                   <tr>
-                    <td>67890</td>
-                    <td>$50</td>
-                    <td>2024-03-12</td>
-                    <td>Online</td>
+                    <td class="field-name">Password : </td>
+                    <td class="user-password">987654321</td>
                   </tr>
+                  <tr>
+                    <td class="field-name">Shop id : </td>
+                    <td class="shop-id">78943</td>
+                  </tr>
+                  <tr>
+                    <td class="field-name">Start date : </td>
+                    <td class="start-date">10-10-2020</td>
+                  </tr>
+                  <tr>
+                    <td class="field-name">Security : </td>
+                    <td class="security-code">4000</td>
+                  </tr>
+                  <tr>
+                    <td class="field-name">State : </td>
+                    <td class="user-state">Kerala</td>
+                  </tr>
+                  <tr>
+                    <td class="field-name">District : </td>
+                    <td class="user-district">Kottayam</td>
+                  </tr>
+                  <tr>
+                    <td class="field-name">Town : </td>
+                    <td class="user-town">Pala</td>
+                  </tr>
+                  <tr>
+                    <td class="field-name">Pin code : </td>
+                    <td class="user-pincode">686575</td>
+                  </tr>
+                 
                 </table>
+                <h1>Documents :</h1>
+                
+                  <div class="file-container">
+                    <div class="file1">
+                      <h2>file name</h2>
+                      <button class="view">View File</button>
+                    </div>
+                    <div class="file1">
+                      <h2>file name</h2>
+                      <button class="view">View File</button>
+                    </div>
+                    <div class="file1">
+                      <h2>file name</h2>
+                      <button class="view">View File</button>
+                    </div>
+                </div>
+                <div class="payment-table">
+                  <h1>Payment Details:</h1>
+                  <table>
+                    <tr>
+                      <th>Shop ID</th>
+                      <th>Amount</th>
+                      <th>Date</th>
+                      <th>Mode of Payment</th>
+                    </tr>
+                    <tr>
+                      <td>12345</td>
+                      <td>$100</td>
+                      <td>2024-03-11</td>
+                      <td>Offline</td>
+                    </tr>
+                    <tr>
+                      <td>67890</td>
+                      <td>$50</td>
+                      <td>2024-03-12</td>
+                      <td>Online</td>
+                    </tr>
+                    <tr>
+                      <td>67890</td>
+                      <td>$50</td>
+                      <td>2024-03-12</td>
+                      <td>Online</td>
+                    </tr>
+                  </table>
+                </div>
+               
                 
 
               </div>
