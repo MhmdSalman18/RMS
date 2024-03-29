@@ -1,4 +1,4 @@
-/* Imports */
+
 
 body {
   font-family: Arial, sans-serif;
@@ -9,14 +9,6 @@ body {
   background-size: cover;
   
 }
- img {
-  border-radius: 100%;
-  width: 5vw;
-  height: 10vh;
-  margin-right: 60px;
-}
-
-
 
 nav {
   background-color: #fff;
@@ -25,8 +17,8 @@ nav {
   font-size: 2.4cqh;
   display: flex;
   justify-content: space-between;
-  padding: 4vh;
   align-items: center;
+  padding: 3vh 3vw;
 }
 nav ul {
   display: flex;
@@ -57,9 +49,8 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* border: 1px solid black; */
   font-size: 1.6vmax;
-  padding: 10vh 1vw;
+  padding: 6vh 1vw;
 }
 
 .sidebar-menu li {
@@ -72,7 +63,7 @@ nav ul {
 }
 .sidebar-menu li a {
   display: block;
-  padding: 10px;
+  padding: 1vmin;
   color: #3f09eb;
   text-decoration: none;
 }
@@ -81,22 +72,49 @@ nav ul {
   margin-right: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Font Awesome Icons (Replace with your preferred icon library) */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
+img {
+  border-radius: 100%;
+  width: 5vw;
+  height: 10vh;
+  margin-right: 60px;
 }
 
-.sidebar.dark-mode {
-  background-color: #111;
-}
-
-.sidebar-menu li a.dark-mode-toggle {
-  cursor: pointer;
-}
 
 /*8888888888888888888888888888888amain88888888888888888888888888*/
 main {

@@ -16,7 +16,7 @@
       <div class="nav-main">
         <ul class="nav-contents">
           <li><h3>Name of the perrson</h3></li>
-          <li><img class="dp" src="admin.jpg" alt="" /></li>
+          <li><img class="dp" src="/images/admin.jpg" alt="" style="width: 3vw;height: 6vh; border-radius: 100%;" /></li>
         </ul>
       </div>
     </nav>
@@ -36,7 +36,7 @@
         <li>
           <a href="#"><i class="fas fa-moon"></i> Dark Mode</a>
         </li>
-        <br><br>                                                                                                                                                                                                                        
+       <br><br>                                                                                                                                                                                                                        
         <li>
           <a href="#" style="color: rgb(255, 0, 0);"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
         </li>
@@ -44,26 +44,37 @@
     </div>
     <main>
       <!--================================ main content =======================-->
-
+      <div class="box">
       <div class="dp">
-        <img src="/ADMIN/frontend/images/admin.jpg" alt="image" />
-        <h1 id="user-name">Sugumaran parakullil</h1>
+        <img src="/images/admin.jpg" alt="" />
+        <button>Edit<i class="fa-solid fa-pen-to-square" style="margin-left: 10px;"></i></button>
       </div>
-      <h1>Title</h1>
-      <p>Title of the problem</p>
-      <h1>Description</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ea, modi
-        mollitia qui, numquam delectus culpa voluptate recusandae quibusdam
-        nulla molestias porro pariatur, saepe vitae voluptas sapiente earum ad
-        aliquam!
-      </p>
-      <div class="images">
-        <img src="/ADMIN/frontend/images/bg.jpg" alt="">
-        <img src="/ADMIN/frontend/images/bg.jpg" alt="">
-        <img src="/ADMIN/frontend/images/bg.jpg" alt="">
-      </div>
+      <div class="row">
+        <div class="field">  
+            <label for="name">Name :</label>
+            <input type="text" value="John Doe">
+        </div>
+        <div class="field">  
+            <label for="email">Email :</label>
+            <input type="text" value="Johndowdcfswcf@gmail.com">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="field">  
+            <label for="name">Name :</label>
+            <input type="text" value="John Doe">
+        </div>
+        <div class="field">  
+            <label for="name">Name :</label>
+            <input type="text" value="John Doe">
+        </div>
+    </div>
+    
+      
+    
     </main>
+  </div>
   </body>
 </html>
 <script src="script.js"></script>

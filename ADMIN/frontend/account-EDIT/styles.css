@@ -71,16 +71,9 @@ nav ul {
   margin-right: 10px;
 }
 
+
 /* Font Awesome Icons (Replace with your preferred icon library) */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-
-/*8888888888888888888888888888888amain88888888888888888888888888*/
-main {
-  padding: 10vh 5vw;
-  margin-left: 26vw;
-  
-}
 
 img {
   border-radius: 100%;
@@ -89,7 +82,22 @@ img {
   margin-right: 60px;
 }
 
-
+input {
+  width: 20vw;
+  font-size: 20px;
+  padding: 8px;
+  height: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+/*8888888888888888888888888888888amain88888888888888888888888888*/
+main {
+  padding: 10vh 4vw;
+  margin-left: 26vw;
+  
+}
 .row {
   display: flex;
   flex-direction: row;

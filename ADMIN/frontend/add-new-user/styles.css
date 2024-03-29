@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,41 +6,18 @@ body {
   /* background-image: url("bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
-h2 {
-  background-color: #676666;
-  color: #fff;
-  padding: 20px 60px;
-  border-radius: 6px;
-}
-img {
-  border-radius: 100%;
-  width: 5vw;
-  height: 10vh;
-  margin-right: 60px;
-}
-h1 {
-  margin: 100px 0;
-}
-input {
-  width: 20vw;
-  font-size: 20px;
-  padding: 8px;
-  height: 60%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
+
 nav {
   background-color: #fff;
   position: sticky;
-  top: 0;
+    top: 0;
   font-size: 2.4cqh;
   display: flex;
   justify-content: space-between;
-  padding: 4vh;
   align-items: center;
+  padding: 3vh 3vw;
 }
 nav ul {
   display: flex;
@@ -71,7 +49,7 @@ nav ul {
   padding: 0;
   margin: 0;
   font-size: 1.6vmax;
-  padding: 10vh 1vw;
+  padding: 6vh 1vw;
 }
 
 .sidebar-menu li {
@@ -84,7 +62,7 @@ nav ul {
 }
 .sidebar-menu li a {
   display: block;
-  padding: 10px;
+  padding: 1vmin;
   color: #3f09eb;
   text-decoration: none;
 }
@@ -93,22 +71,38 @@ nav ul {
   margin-right: 10px;
 }
 
+
+
+
 /* Font Awesome Icons (Replace with your preferred icon library) */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #333;
+h2 {
+  background-color: #676666;
   color: #fff;
+  padding: 20px 60px;
+  border-radius: 6px;
+}
+img {
+  border-radius: 100%;
+  width: 5vw;
+  height: 10vh;
+  margin-right: 60px;
+}
+h1 {
+  margin: 100px 0;
+}
+input {
+  width: 20vw;
+  font-size: 20px;
+  padding: 8px;
+  height: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-.sidebar.dark-mode {
-  background-color: #111;
-}
 
-.sidebar-menu li a.dark-mode-toggle {
-  cursor: pointer;
-}
 
 /*8888888888888888888888888888888amain88888888888888888888888888*/
 main {
