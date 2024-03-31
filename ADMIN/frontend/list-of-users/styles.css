@@ -1,4 +1,6 @@
-
+* {
+  text-decoration: none;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,13 +8,12 @@ body {
   /* background-image: url("bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 nav {
   background-color: #fff;
   position: sticky;
-    top: 0;
+  top: 0;
   font-size: 2.4cqh;
   display: flex;
   justify-content: space-between;
@@ -21,15 +22,19 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 4vh;
+  gap: 2vw;
   align-items: center;
   color: #0000fe;
   cursor: pointer;
   list-style: none;
 }
+nav img {
+  border-radius: 100%;
+  height: 5vh;
+}
+
 .sidebar {
   background-color: #fff;
-
   position: fixed;
   left: 0;
   height: 80vh;
@@ -68,35 +73,35 @@ nav ul {
 }
 
 .sidebar-menu li a i {
-  margin-right: 10px;
+  margin-right: 2vw;
 }
-nav img{
-  border-radius: 100%;
-  width: 3vw;
-  height: 6vh;
-  margin-right: 60px;
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0vh 3vw;
+  }
+  nav h3 {
+    display: none;
+  }
+  nav img {
+  }
+  .sidebar {
+    width: 10vw;
+
+    padding: 20px;
+  }
+
+  .sidebar-menu li a span {
+    display: none;
+  }
+
+  .sidebar-menu li a i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
 }
+/* ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️   MAIN PAGE STYLES ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Font Awesome Icons (Replace with your preferred icon library) */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-
 
 main img {
   border-radius: 100%;
@@ -105,13 +110,10 @@ main img {
   margin-right: 60px;
 }
 
-
-
 /*8888888888888888888888888888888amain88888888888888888888888888*/
 main {
   padding: 10vh 4vw;
   margin-left: 26vw;
-  
 }
 .add-new-user {
   float: right;
@@ -125,7 +127,7 @@ main {
   margin-right: 60px;
   cursor: pointer;
 }
-.add-new-user:hover{
+.add-new-user:hover {
   background-color: #3f09eb;
   color: #fff;
   box-shadow: 0 0 10px #3f09eb;
@@ -153,14 +155,41 @@ main {
   justify-content: space-between;
 }
 
-
-
- .user-info {
+.user-info {
   display: flex;
 }
-h3{
+h3 {
   text-align: center;
   display: flex;
   align-items: center;
-
+}
+@media only screen and (max-width: 768px) {
+  main {
+    margin-left: 26vw;
+  }
+  main img {
+    border-radius: 100%;
+    width: auto;
+    height: 8vh;
+    margin-right: 50px;
+  }
+  .add-new-user {
+    padding: 10px;
+    margin: 0;
+  }
+  .user1 {
+    width: 64vw;
+    height: 6vh;
+    font-size: 2vmin;
+    margin: 6vh 0;
+    padding: 1vmin;
+    
+  }
+  
+  main img {
+    border-radius: 100%;
+  height: 6vh;
+    margin-right: 20px;
+  }
+  
 }

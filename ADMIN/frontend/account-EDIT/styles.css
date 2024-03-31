@@ -1,3 +1,7 @@
+*{
+ 
+  text-decoration: none;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -142,6 +146,7 @@ main h3 {
   justify-content: left;
   align-items: center;
   padding: 20px 30px;
+
 }
 .dp button{
   border-radius: 5px;
@@ -149,6 +154,7 @@ main h3 {
   color: #fff;
   border: none;
   padding:1vmin;
+  cursor: pointer;
 }
 .box {
   border: 1px solid #3f09eb;
@@ -157,29 +163,20 @@ main h3 {
   padding-right: 5vw;
   
 }
-label {
+table,tr,td{
+  padding: 20px;
   font-size: 3vmin;
+}
+.field-label{
+  color: #3f09eb;
+}
 
-  margin: 10px;
-}
-.field {
-  display: flex;
-  align-items: center;
- 
-  justify-content: center;
-  padding: 3vmin;
-}
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 .form-buttons {
   display: flex;
   float: right;
-  margin-right: 3.5vw;
-  padding-top: 2vh;
+  margin-right: 26vw;
+  padding: 5vh 0;
 
 }
 .form-buttons .reset-form {
@@ -189,6 +186,8 @@ label {
   margin-right: 2vw;
   padding: 1vh 2vw;
   border-radius: 6px;
+  cursor: pointer;
+
 
 }
 .form-buttons .save-form {
@@ -196,6 +195,8 @@ label {
   color: #fff;
   border-radius: 6px;
   padding: 1vh 2vw;
+  cursor: pointer;
+  border: none;
 
 
 }
@@ -212,6 +213,9 @@ label {
     padding-right: 0;
     margin-right: 0;
   }
+  main{
+    padding:10vh 0;
+  }
   button {
     padding: 1vh 2vw;
     border: none;
@@ -220,20 +224,27 @@ label {
   .form-buttons {
     display: flex;
     float: right;
-    margin-right: 1vw;
+    margin-right: 6vw;
     padding-top: 2vh;
   
   }
+  table,tr,td{
+    padding: 2vh 10px;
+    font-size: 3vmin;
+  }
+  .field-label{
+    color: #3f09eb;
+  }
+  
   
 input {
   width: 40vw;
   font-size: 2vmin;
-  padding: 8px;
   
-  height:2vh;
+  height:3vh;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 }

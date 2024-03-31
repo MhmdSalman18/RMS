@@ -1,6 +1,6 @@
-/* Imports */
-
-
+* {
+  text-decoration: none;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,13 +8,12 @@ body {
   /* background-image: url("bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 nav {
   background-color: #fff;
   position: sticky;
-    top: 0;
+  top: 0;
   font-size: 2.4cqh;
   display: flex;
   justify-content: space-between;
@@ -23,15 +22,19 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 4vh;
+  gap: 2vw;
   align-items: center;
   color: #0000fe;
   cursor: pointer;
   list-style: none;
 }
+nav img {
+  border-radius: 100%;
+  height: 5vh;
+}
+
 .sidebar {
   background-color: #fff;
-
   position: fixed;
   left: 0;
   height: 80vh;
@@ -70,66 +73,70 @@ nav ul {
 }
 
 .sidebar-menu li a i {
-  margin-right: 10px;
+  margin-right: 2vw;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0vh 3vw;
+  }
+  nav h3 {
+    display: none;
+  }
+  nav img {
+  }
+  .sidebar {
+    width: 10vw;
 
+    padding: 20px;
+  }
 
-/* Font Awesome Icons (Replace with your preferred icon library) */
+  .sidebar-menu li a span {
+    display: none;
+  }
+
+  .sidebar-menu li a i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+/* ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️   MAIN PAGE STYLES ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
-h2{
+h2 {
   background-color: #676666;
   color: #fff;
-  padding: 0px 60px;
+  padding: 10px 30px;
+  font-size: 2vmin;
   border-radius: 6px;
 }
-img {
+main img {
   border-radius: 100%;
   width: 5vw;
   height: 10vh;
   margin-right: 60px;
 }
-h1{
-  margin: 100px 0;
+h1 {
+  margin: 10px 0;
+  font-size: 3vmin;
 }
 
 /*8888888888888888888888888888888amain88888888888888888888888888*/
 main {
   padding: 10vh 4vw;
   margin-left: 26vw;
-  
 }
-
-.dp{
-  display: flex;
- padding-top: 100px;
- 
+button{
+  cursor: pointer;
 }
-
-  
-.details{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+.edit-user{
+  background-color: #676666;
 }
-.dp button{
-  background-color: #3f09eb;
-  color: #fff;
-  border: none;
-  margin: 10px;
-  border-radius: 10px;
-  padding:10px 50px;
-  display: flex;
-  align-items: center;
-  font-size: 2vmin;
-}
-.buttons{
+.buttons {
   float: right;
-  
 }
 
-.buttons button{
-  background-color: #3f09eb;
+.buttons button {
+
   color: #fff;
   border: none;
   font-size: 2.2vmin;
@@ -138,68 +145,147 @@ main {
   padding: 2vh 20px;
   margin-right: 20px;
 }
-.buttons i{
+.buttons i {
   margin: 0 10px;
 }
-.buttons .add-new-payment{
+
+main .dp {
+  display: flex;
+  padding-top: 100px;
+}
+.dp button {
+  color: #fff;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vmin;
+}
+.dp .delete {
+  background-color: red;
+  height: 5vh;
+  border-radius: 6px;
+  padding: 1px 30px;
+}
+.dp .upload {
+  background-color: #3f09eb;
+  border-radius: 6px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 30px;
+  height: 5vh;
+  cursor: pointer;
+}
+
+.buttons .add-new-payment {
   background-color: #50b100;
 }
-.user-details{
+.user-details {
   margin: 6vmin 0;
 }
-.file-container{
-  margin: 20px 0;
+.file-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.file-container .file1{
-  padding:2px 10px;
+.file-container .file1 {
+  padding: 2px 10px;
   border: 1px solid #3f09eb;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 6px;
-  width: 50vw;
+  width: 43vw;
   margin: 20px 0;
 }
-.file1 button{
+.file1 button {
   background-color: #3f09eb;
   color: #fff;
-  border: none;
-  font-size: 2.2vmin;
-  text-align: center;
-  border-radius: 6px;
-  padding: 2vh 20px;
-  margin-right: 20px;
-  
+  padding: 1vh 3vw;
+  border-radius: 4px;
+  margin: 0 10px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
 .payment-table table {
   padding: 8px;
-  width: 80%;
+  width: 44.4vw;
   border-radius: 10px;
   border: 1px solid black;
   height: 30vh;
 }
 
-.payment-table th, td {
+.payment-table th,
+td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-.payment-table span{
-  padding-bottom: 100px;
 }
 
-span{
-  font-size: 3vmin;
-  display:inline;
-  flex-direction: row;
-  text-align: left;
-}
-tr{
+tr {
   font-size: 3vmin;
   margin: 10px 0;
 }
-.user-details td{
+
+.payment-table th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr {
+  font-size: 3vmin;
+  margin: 10px 0;
+}
+.user-details td {
   height: 9vh;
+}
+@media only screen and (max-width: 768px) {
+  main{
+    margin-left: 20vw;
+  }
+  main img {
+    border-radius: 100%;
+    width: 10vw;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  h1 {
+    margin: 5vh 0;
+  }
+  .buttons button {
+    margin: 0;
+  }
+  .file-container .file1 {
+    margin: 0;
+    width: 60vw;
+  }
+  .payment-table table{
+    width: 63vw;
+    margin: 0;
+  }
+  .payment-table td {
+    padding: 8px;
+    text-align: left;
+    font-size: 2.2vmin;
+  }
+  .payment-table th {
+   
+    font-size: 2.2vmin;
+  }
 }

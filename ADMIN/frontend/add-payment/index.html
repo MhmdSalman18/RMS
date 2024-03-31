@@ -14,10 +14,18 @@
     <nav>
       <div class="logo">LOGO</div>
       <div class="nav-main">
-        <ul class="nav-contents">
-          <li><h3>Name of the perrson</h3></li>
-          <li><img class="dp" src="/ADMIN/frontend/images/bg.jpg" alt="" /></li>
-        </ul>
+        <a href="/ADMIN/frontend/account/index.html"
+          ><ul class="nav-contents">
+            <li><h3>Name of the perrson</h3></li>
+            <li>
+              <img
+                class="dp"
+                src="/ADMIN/frontend/images/admin.jpg"
+                alt=""
+                style="border-radius: 100%"
+              />
+            </li></ul
+        ></a>
       </div>
     </nav>
 
@@ -25,28 +33,39 @@
       <div class="sidebar-header"></div>
       <ul class="sidebar-menu">
         <li>
-          <a href="#"><i class="fas fa-users"></i> Users</a>
+          <a href="/ADMIN/frontend/list-of-users/index.html"
+            ><i class="fas fa-users"></i><span>Users</span>
+          </a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+          <a href="/ADMIN/frontend/notification/index.html"
+            ><i class="fas fa-bell"></i> <span>Notifications</span></a
+          >
         </li>
         <li>
-          <a href="#"><i class="fas fa-wrench"></i> Maintenance</a>
+          <a href="/ADMIN/frontend/maintenance-view/index.html"
+            ><i class="fas fa-wrench"></i> <span>Maintenance</span></a
+          >
         </li>
         <li>
-          <a href="#"><i class="fas fa-moon"></i> Dark Mode</a>
+          <a href="#"><i class="fas fa-moon"></i> <span>Dark Mode</span></a>
         </li>
-        <br><br>                                                                                                                                                                                                                        
+        <br /><br />
         <li>
-          <a href="#" style="color: rgb(255, 0, 0);"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+          <a href="#" style="color: rgb(255, 0, 0)"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i
+            ><span>Logout</span>
+          </a>
         </li>
       </ul>
     </div>
     <main>
       <div class="box">
         <div class="dp">
-          <img src="/ADMIN/frontend/images/admin.jpg" alt="" />
-          <div class="user-name">SUGUMARAN PARAKULLIL</div>
+          <div class="dp-name">
+            <img src="/ADMIN/frontend/images/admin.jpg" alt="" />
+            <div class="user-name">SUGUMARAN PARAKULLIL</div>
+          </div>
           <div class="date">Date</div>
         </div>
         <table>
@@ -57,25 +76,45 @@
                 type="text"
                 name="amount_to_be_paid"
                 id="amount_to_be_paid"
+                placeholder="Enter amount..."
               />
             </td>
           </tr>
           <tr>
             <td><label for="amount">Paying Amount:</label></td>
             <td>
-              <input type="text" name="paying_amount" id="paying_amount" />
+              <input
+                type="text"
+                name="paying_amount"
+                id="paying_amount"
+                placeholder="Enter Paying Amount "
+              />
             </td>
           </tr>
           <tr>
-            <td><label for="">Mode of payment</label> </td>
-            <td>
-              <p>Online</p>
+            <td><label for="">Mode of payment</label></td>
+            <td class="payment-mode">
+              <input
+                type="radio"
+                id="online"
+                name="mode_of_payment"
+                value="online"
+                checked
+              />
+              <label for="online">Online</label>
 
+              <input
+                type="radio"
+                id="offline"
+                name="mode_of_payment"
+                value="offline"
+              />
+              <label for="offline">Offline</label>
             </td>
           </tr>
         </table>
-        <button id="submit">Submit Payment</button>
 
+        <button id="submit">Submit Payment</button>
       </div>
     </main>
   </body>

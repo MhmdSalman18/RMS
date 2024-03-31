@@ -139,28 +139,20 @@ main h3 {
   width: max-content;
   padding-right: 10vw;
 }
-label {
+table,tr,td{
+  padding: 20px;
   font-size: 3vmin;
+}
+.field-label{
+  color: #3f09eb;
+}
 
-  margin: 10px;
-}
-.field {
-  display: flex;
-  align-items: center;
-  padding: 3vmin;
-}
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
 button {
-  padding: 1.5vh 2vw;
-  border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   background-color: #3f09eb;
   color: #fff;
-  font-size:  2vmin;
+  border: none;
+  padding:1vmin;
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {

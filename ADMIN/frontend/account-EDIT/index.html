@@ -14,10 +14,10 @@
     <nav>
       <div class="logo">LOGO</div>
       <div class="nav-main">
-        <ul class="nav-contents">
+        <a href="/ADMIN/frontend/account/index.html"><ul class="nav-contents">
           <li><h3>Name of the perrson</h3></li>
           <li><img class="dp" src="/ADMIN/frontend/images/admin.jpg" alt="" style="border-radius: 100%;" /></li>
-        </ul>
+        </ul></a>
       </div>
     </nav>
 
@@ -45,38 +45,36 @@
     <main>
       <!--================================ main content =======================-->
       <div class="box">
-      <div class="dp">
-        <img src="/ADMIN/frontend/images/admin.jpg" alt="" />
-        <button>Upload &nbsp;<i class="fa-solid fa-cloud-arrow-up"></i></button>
+        <div class="dp">
+          <img src="/ADMIN/frontend/images/admin.jpg" alt="" />
+          <button id="uploadButton">Upload &nbsp;<i class="fa-solid fa-cloud-arrow-up"></i></button>
+        </div>
+        <table class="form-table">
+          <tr>
+            <td><label for="name1">Name :</label></td>
+            <td><input type="text" id="name1" class="name" value="John Doe"></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email :</label></td>
+            <td><input type="text" id="email" class="email" value="Johndowdcfswcf@gmail.com"></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone no :</label></td>
+            <td><input type="text" id="phone" class="phone" value="John Doe"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="text" id="password" class="password" value="John Doe"></td>
+          </tr>
+        </table>
+        
+        
       </div>
-      <div class="row">
-        <div class="field">  
-            <label for="name">Name :</label>
-            <input type="text" value="John Doe">
-        </div>
-        <div class="field">  
-            <label for="email">Email :</label>
-            <input type="text" value="Johndowdcfswcf@gmail.com">
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="field">  
-            <label for="name">Name :</label>
-            <input type="text" value="John Doe">
-        </div>
-        <div class="field">  
-            <label for="name">Name :</label>
-            <input type="text" value="John Doe">
-        </div>
-    </div>
-  </div>
-  <div class="form-buttons">
-    <button id="resetButton" class="reset-form">Reset</button>
-    <button id="saveButton" class="save-form">Save</button>
-    
-  </div>
-    
+      <div class="form-buttons">
+        <button id="resetButton" class="reset-form">Reset</button>
+        <button id="saveButton" class="save-form">Save</button>
+      </div>
+      
       
     
     </main>

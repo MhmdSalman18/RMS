@@ -1,5 +1,3 @@
-/* Imports */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,13 +5,12 @@ body {
   /* background-image: url("bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 nav {
   background-color: #fff;
   position: sticky;
-    top: 0;
+  top: 0;
   font-size: 2.4cqh;
   display: flex;
   justify-content: space-between;
@@ -22,15 +19,19 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 4vh;
+  gap: 2vw;
   align-items: center;
   color: #0000fe;
   cursor: pointer;
   list-style: none;
 }
+nav img {
+  border-radius: 100%;
+  height: 5vh;
+}
+
 .sidebar {
   background-color: #fff;
-
   position: fixed;
   left: 0;
   height: 80vh;
@@ -69,36 +70,34 @@ nav ul {
 }
 
 .sidebar-menu li a i {
-  margin-right: 10px;
+  margin-right: 2vw;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0vh 3vw;
+  }
+  nav h3 {
+    display: none;
+  }
+  nav img {
+  }
+  .sidebar {
+    width: 10vw;
 
+    padding: 20px;
+  }
 
+  .sidebar-menu li a span {
+    display: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Font Awesome Icons (Replace with your preferred icon library) */
+  .sidebar-menu li a i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+/* ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️   MAIN PAGE STYLES ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-/* Dark Mode */
 
 /*8888888888888888888888888888888a main 88888888888888888888888888*/
 main {
@@ -106,9 +105,38 @@ main {
   margin-left: 26vw;
 }
 
-.dp {
+main .dp {
   display: flex;
-  padding-top: 100px;
+}
+.dp button {
+  color: #fff;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vmin;
+}
+.dp .delete {
+  background-color: red;
+  height: 5vh;
+  border-radius: 6px;
+  padding: 1px 30px;
+}
+.dp .upload {
+  background-color: #3f09eb;
+  border-radius: 6px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 30px;
+  height: 5vh;
+  cursor: pointer;
 }
 
 h2 {
@@ -117,14 +145,18 @@ h2 {
   padding: 20px 60px;
   border-radius: 6px;
 }
-img {
+main img {
   border-radius: 100%;
   width: 5vw;
   height: 10vh;
   margin-right: 60px;
 }
 h1 {
-  margin: 100px 0;
+  margin: 5vh 0;
+  font-size: 3vmin;
+}
+button{
+  cursor: pointer;
 }
 input {
   width: 20vw;
@@ -137,33 +169,8 @@ input {
   margin-bottom: 10px;
 }
 
-
-.dp button {
-  color: #fff;
-  border: none;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 10px 50px;
-  display: flex;
-  align-items: center;
-  font-size: 2vmin;
-}
 .dp .delete {
   background-color: red;
-}
-
-.dp .upload {
-  background-color: #3f09eb;
-  border-radius: 10px;
-  color: white;
-  margin-top: 10px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1px 30px;
-  height: 50px;
-  cursor: pointer;
 }
 
 .buttons {
@@ -178,19 +185,10 @@ input {
   flex-direction: column;
   padding: 10px;
 }
-span {
-  font-size: 3vmin;
-  display: inline;
-  flex-direction: row;
-  text-align: left;
-}
-.user-details {
-  margin: 6vmin 0;
-}
 
 .payment-table table {
   padding: 8px;
-  width: 80%;
+  width: 44.4vw;
   border-radius: 10px;
   border: 1px solid black;
   height: 30vh;
@@ -199,40 +197,22 @@ span {
 .payment-table th,
 td {
   padding: 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+  text-align: left;
 }
-
 
 tr {
   font-size: 3vmin;
   margin: 10px 0;
 }
 .user-details td {
-  height: 9vh;
-}
-.form-buttons {
-  float: right;
-  margin-right: 18%;
-  display: flex;
-}
-.form-buttons button {
-  display: flex;
-  align-items: center;
-  background-color: #3f09eb;
-  color: white;
-  padding: 1.2vh 3vw;
-  border: none;
-  border-radius: 4px;
-  margin: 6vh;
-  cursor: pointer;
+  height: 8vh;
 }
 
 .add-new {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 22%;
+  margin-right: 19vw;
 }
 .add-new-payment {
   background-color: #50b100;
@@ -272,10 +252,10 @@ tr {
 }
 
 .file {
-  border: 1px solid #ccc;
+  border: 1px solid #3f09eb;
   padding: 10px;
   border-radius: 5px;
-  width: 50vw;
+  width: 43vw;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -290,14 +270,6 @@ tr {
   margin-top: 5px;
   cursor: pointer;
 }
-.file {
-  display: flex;
-  justify-content: space-between; /* Aligns items to the left and right edges */
-  align-items: center; /* Centers items vertically */
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 5px;
-}
 
 .file-name {
   flex: 1; /* Takes up remaining space */
@@ -310,7 +282,7 @@ tr {
   border: 1px solid #3f09eb;
   padding: 10px;
   border-radius: 10px;
-  margin-right: 20%;
+  margin-right: 30%;
   margin-bottom: 10px;
 }
 .upload-box button {
@@ -321,8 +293,118 @@ tr {
   border-radius: 5px;
 }
 
-.form-buttons .reset-form{
+.form-buttons .reset-form {
   background-color: transparent;
-  border:1px solid #3f09eb;
-  color:#3f09eb;
+  border: 1px solid #3f09eb;
+  color: #3f09eb;
+}
+.form-buttons {
+  float: right;
+  margin-right: 19vw;
+  display: flex;
+}
+.form-buttons button {
+  display: flex;
+  align-items: center;
+  background-color: #3f09eb;
+  color: white;
+  padding: 1.2vh 3vw;
+  border: none;
+  border-radius: 4px;
+  margin: 3vh;
+  cursor: pointer;
+
+}
+
+@media only screen and (max-width: 768px) {
+  main img {
+    border-radius: 100%;
+    width: 10vw;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 0;
+
+  }
+  h1 {
+    margin: 5vh 0;
+  }
+
+  input {
+    width: 40vw;
+    font-size: 2vmin;
+    padding: 10px;
+
+    height: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  main {
+    padding-top: 10vh;
+    margin-left: 20vw;
+  }
+  .file {
+    width: 63vw;
+  }
+  .upload-box {
+    width: 63vw;
+    height: 4vh;
+  }
+ 
+  .dp .upload {
+    margin-top: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 20px;
+    height: 3.6vh;
+    font-size: small;
+    cursor: pointer;
+  }
+  .dp .delete {
+    font-size: 12px;
+    height: 3.6vh;
+    padding: 1px 20px;
+  }
+  .add-new-payment {
+    background-color: #50b100;
+    height: min-content;
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    margin-right: 0;
+    font-size: 2.6vmin;
+    color: #fff;
+    width: fit-content;
+  }
+  .add-new {
+    
+    margin-right: 0;
+  }
+  .payment-table table {
+    padding: 8px;
+    width: 66vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 30vh;
+  }
+  
+  .payment-table th,
+  td {
+    padding: 8px;
+    text-align: left;
+    font-size: 2vmin;
+
+  }
+  .user-details td {
+    height: 2vh;
+  }
+  .form-buttons {
+    margin-right: 0;
+    float: right;
+  }
+  
+ 
 }
