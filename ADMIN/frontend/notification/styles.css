@@ -18,6 +18,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 3vh 3vw;
+  border: 1px solid red;
+
 }
 nav ul {
   display: flex;
@@ -29,7 +31,7 @@ nav ul {
 }
 .sidebar {
   background-color: #fff;
-
+border: 1px solid red;
   position: fixed;
   left: 0;
   height: 80vh;
@@ -77,34 +79,14 @@ nav img{
   margin-right: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Font Awesome Icons (Replace with your preferred icon library) */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-
-
-main img {
+img {
   border-radius: 100%;
   width: 5vw;
   height: 10vh;
   margin-right: 60px;
 }
-
 
 
 /*8888888888888888888888888888888amain88888888888888888888888888*/
@@ -113,54 +95,26 @@ main {
   margin-left: 26vw;
   
 }
-.add-new-user {
-  float: right;
-  color: #3f09eb;
-  padding: 10px;
-  box-shadow: 0 0 5px #3f09eb;
-  border-radius: 6px;
-  border: 1px solid #3f09eb;
-  background-color: transparent;
-  font-size: 1.4vmax;
-  margin-right: 60px;
-  cursor: pointer;
-}
-.add-new-user:hover{
-  background-color: #3f09eb;
-  color: #fff;
-  box-shadow: 0 0 10px #3f09eb;
-}
-.fa-plus {
-  padding-left: 20px;
-}
-
-.content {
+.dp{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  
 }
-.content .user1 i {
-  font-size: 10vh;
-  float: right;
-}
-.user1 {
+.box{
   border: 1px solid #3f09eb;
   border-radius: 10px;
-  width: 60vw;
-  margin: 10vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30vw;
+
+}
+button{
+  background-color: #3f09eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
- .user-info {
-  display: flex;
-}
-h3{
-  text-align: center;
-  display: flex;
-  align-items: center;
-
+  width: 6vw;
 }

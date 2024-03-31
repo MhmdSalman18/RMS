@@ -16,7 +16,7 @@
       <div class="nav-main">
         <ul class="nav-contents">
           <li><h3>Name of the perrson</h3></li>
-          <li><img class="dp" src="/images/admin.jpg" alt="" style="width: 3vw;height: 6vh; border-radius: 100%;" /></li>
+          <li><img class="dp" src="/ADMIN/frontend/images/admin.jpg" alt="" style="border-radius: 100%;" /></li>
         </ul>
       </div>
     </nav>
@@ -25,20 +25,20 @@
       <div class="sidebar-header"></div>
       <ul class="sidebar-menu">
         <li>
-          <a href="#"><i class="fas fa-users"></i> Users</a>
+          <a href="/ADMIN/frontend/list-of-users/index.html"><i class="fas fa-users"></i><span>Users</span> </a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+          <a href="/ADMIN/frontend/notification/index.html"><i class="fas fa-bell"></i> <span>Notifications</span></a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-wrench"></i> Maintenance</a>
+          <a href="/ADMIN/frontend/maintenance-view/index.html"><i class="fas fa-wrench"></i> <span>Maintenance</span></a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-moon"></i> Dark Mode</a>
+          <a href="#"><i class="fas fa-moon"></i> <span>Dark Mode</span></a>
         </li>
        <br><br>                                                                                                                                                                                                                        
         <li>
-          <a href="#" style="color: rgb(255, 0, 0);"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+          <a href="#" style="color: rgb(255, 0, 0);"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span> </a>
         </li>
       </ul>
     </div>
@@ -46,8 +46,8 @@
       <!--================================ main content =======================-->
       <div class="box">
       <div class="dp">
-        <img src="/images/admin.jpg" alt="" />
-        <button>Edit<i class="fa-solid fa-pen-to-square" style="margin-left: 10px;"></i></button>
+        <img src="/ADMIN/frontend/images/admin.jpg" alt="" />
+        <button>Upload &nbsp;<i class="fa-solid fa-cloud-arrow-up"></i></button>
       </div>
       <div class="row">
         <div class="field">  
@@ -70,6 +70,12 @@
             <input type="text" value="John Doe">
         </div>
     </div>
+  </div>
+  <div class="form-buttons">
+    <button id="resetButton" class="reset-form">Reset</button>
+    <button id="saveButton" class="save-form">Save</button>
+    
+  </div>
     
       
     

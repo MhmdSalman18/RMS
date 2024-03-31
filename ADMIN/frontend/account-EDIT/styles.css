@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,13 +5,12 @@ body {
   /* background-image: url("bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 nav {
   background-color: #fff;
   position: sticky;
-    top: 0;
+  top: 0;
   font-size: 2.4cqh;
   display: flex;
   justify-content: space-between;
@@ -21,15 +19,19 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 4vh;
+  gap: 2vw;
   align-items: center;
   color: #0000fe;
   cursor: pointer;
   list-style: none;
 }
+nav img {
+  border-radius: 100%;
+  height: 5vh;
+}
+
 .sidebar {
   background-color: #fff;
-
   position: fixed;
   left: 0;
   height: 80vh;
@@ -68,19 +70,35 @@ nav ul {
 }
 
 .sidebar-menu li a i {
-  margin-right: 10px;
+  margin-right: 2vw;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0vh 3vw;
+  }
+  nav h3 {
+    display: none;
+  }
+  nav img {
+  }
+  .sidebar {
+    width: 10vw;
 
+    padding: 20px;
+  }
 
-/* Font Awesome Icons (Replace with your preferred icon library) */
+  .sidebar-menu li a span {
+    display: none;
+  }
+
+  .sidebar-menu li a i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+/* ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️   MAIN PAGE STYLES ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ */
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
-img {
-  border-radius: 100%;
-  width: 5vw;
-  height: 10vh;
-  margin-right: 60px;
-}
 
 input {
   width: 20vw;
@@ -96,46 +114,126 @@ input {
 main {
   padding: 10vh 4vw;
   margin-left: 26vw;
-  
+}
+
+main img {
+  border-radius: 100%;
+  width: 5vw;
+  height: 10vh;
+  margin-right: 60px;
+}
+main h3 {
+  font-size: 3vmin;
+  color: #7c8d9b;
 }
 .row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px; /* Adjust spacing between rows */
+  padding-right: 10px; /* Adjust spacing between rows */
+  
 }
 .column {
   display: flex;
   flex-direction: column;
-  margin-right: 20px; /* Adjust spacing between label and h3 */
+  padding-right: 20px; /* Adjust spacing between label and h3 */
 }
-.dp{
- display: flex;
- justify-content: left;
- align-items: center;
- margin:20px 30px;
+.dp {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px 30px;
 }
-.box{
+.dp button{
+  border-radius: 5px;
+  background-color: #3f09eb;
+  color: #fff;
+  border: none;
+  padding:1vmin;
+}
+.box {
   border: 1px solid #3f09eb;
   border-radius: 10px;
+  width: max-content;
+  padding-right: 5vw;
+  
 }
-label{
+label {
+  font-size: 3vmin;
+
   margin: 10px;
 }
-.field{
-  display: flex;
-  align-items: center;
-  margin: 30px;
-}
-.row{
+.field {
   display: flex;
   align-items: center;
  
+  justify-content: center;
+  padding: 3vmin;
 }
-button{
-  padding: 10px 20px;
-  border: none;
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-buttons {
+  display: flex;
+  float: right;
+  margin-right: 3.5vw;
+  padding-top: 2vh;
+
+}
+.form-buttons .reset-form {
+  background-color: transparent;
+  border: 1px solid #3f09eb;
+  color: #3f09eb;
+  margin-right: 2vw;
+  padding: 1vh 2vw;
   border-radius: 6px;
+
+}
+.form-buttons .save-form {
   background-color: #3f09eb;
   color: #fff;
-  cursor: pointer;
+  border-radius: 6px;
+  padding: 1vh 2vw;
+
+
+}
+@media only screen and (max-width: 768px) {
+  main img {
+    border-radius: 100%;
+    width: 10vw;
+    height: auto;
+    margin-right: 50px;
+  }
+  .box {
+    width: fit-content;
+    text-align: left;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  button {
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 4px;
+  }
+  .form-buttons {
+    display: flex;
+    float: right;
+    margin-right: 1vw;
+    padding-top: 2vh;
+  
+  }
+  
+input {
+  width: 40vw;
+  font-size: 2vmin;
+  padding: 8px;
+  
+  height:2vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
 }
