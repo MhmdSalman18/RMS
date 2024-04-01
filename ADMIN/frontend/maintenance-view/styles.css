@@ -158,6 +158,17 @@ main {
  .user-info {
   display: flex;
 }
+.buttons{
+}
+.accept,.delete{
+  padding: 1.2vh 3vw;
+  border: none;
+  border-radius: 4px;
+  margin: 3vh;
+  cursor: pointer;
+  color: #fff;
+
+}
 
 @media only screen and (max-width: 768px) {
   main .dp{
@@ -173,5 +184,23 @@ main {
     width: auto;
     margin-right: 50px;
   }
+  .buttons{
+    
+    margin-right: 0vw;
+  }
+  .accept,.delete{
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 4px;
+    margin: 2vh;
+    cursor: pointer;
+    color: #fff;
+  
+  }
+  .images img{
+    width: 43vw;
+    height: auto;
+  }
+ 
  
 }
